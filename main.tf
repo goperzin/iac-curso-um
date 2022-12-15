@@ -16,8 +16,8 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-0574da719dca65348"
   instance_type = "t2.micro"
-  key_name = "leandro-aws-key"
+  key_name = "leandro-aws"
   tags = {
-    Name = "wep-app"
+    Name = "Terraform Ancible Python3"
   }
 }
